@@ -1,0 +1,16 @@
+{
+  "name": "blazedemo-playwright",
+  "version": "1.0.0",
+  "description": "Automação de testes do BlazeDemo com Playwright, Page Objects e DDT",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "keywords": ["playwright", "qa", "page-objects", "ddt"],
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  }
+}

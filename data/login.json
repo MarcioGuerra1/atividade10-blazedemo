@@ -1,0 +1,23 @@
+[
+  {
+    "cenario": "Login com usuário válido (cadastrado antes do teste)",
+    "usarUsuarioCadastrado": true,
+    "emailEnv": "BLAZEDEMO_EMAIL",
+    "senhaEnv": "BLAZEDEMO_PASSWORD",
+    "sucesso": true
+  },
+  {
+    "cenario": "Login com e-mail que não existe",
+    "usarUsuarioCadastrado": false,
+    "email": "naoexiste@exemplo.com",
+    "senha": "Senha@123",
+    "sucesso": false
+  },
+  {
+    "cenario": "Login com senha incorreta para usuário cadastrado",
+    "usarUsuarioCadastrado": true,
+    "emailEnv": "BLAZEDEMO_EMAIL",
+    "senha": "senhaerrada",
+    "sucesso": false
+  }
+]

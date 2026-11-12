@@ -1,0 +1,29 @@
+[
+  {
+    "cenario": "Cadastro válido",
+    "nome": "Marcio Guerra",
+    "empresa": "Iterasys",
+    "email": "qa.{timestamp}@exemplo.com",
+    "senha": "Senha@123",
+    "confirmarSenha": "Senha@123",
+    "sucesso": true
+  },
+  {
+    "cenario": "Cadastro com confirmação de senha diferente",
+    "nome": "Ana Souza",
+    "empresa": "Empresa Teste",
+    "email": "qa.{timestamp}@exemplo.com",
+    "senha": "Senha@123",
+    "confirmarSenha": "OutraSenha@456",
+    "sucesso": false
+  },
+  {
+    "cenario": "Cadastro com senha muito curta",
+    "nome": "Carlos Lima",
+    "empresa": "Empresa Teste",
+    "email": "qa.{timestamp}@exemplo.com",
+    "senha": "123",
+    "confirmarSenha": "123",
+    "sucesso": false
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "cenario": "E-mail não cadastrado",
+    "email": "naoexiste@exemplo.com"
+  },
+  {
+    "cenario": "Outro e-mail não cadastrado",
+    "email": "qa.sem.cadastro@exemplo.com"
+  }
+]

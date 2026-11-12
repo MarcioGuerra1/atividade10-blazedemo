@@ -1,0 +1,7 @@
+[
+  {
+    "cenario": "Destino da semana a partir da página inicial",
+    "textoEsperado": "Destination of the week",
+    "destinoEsperado": "Hawaii"
+  }
+]

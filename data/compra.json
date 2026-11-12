@@ -1,0 +1,56 @@
+[
+  {
+    "cenario": "Paris para Buenos Aires com Visa",
+    "origem": "Paris",
+    "destino": "Buenos Aires",
+    "indiceVoo": 0,
+    "comprador": {
+      "nome": "Marcio Guerra",
+      "endereco": "Rua das Flores, 100",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "cep": "08600000",
+      "tipoCartao": "Visa",
+      "numeroCartao": "4111111111111111",
+      "mes": "12",
+      "ano": "2030",
+      "nomeNoCartao": "Marcio Guerra"
+    }
+  },
+  {
+    "cenario": "Boston para Rome com American Express",
+    "origem": "Boston",
+    "destino": "Rome",
+    "indiceVoo": 1,
+    "comprador": {
+      "nome": "Ana Souza",
+      "endereco": "Avenida Paulista, 1000",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "cep": "01310100",
+      "tipoCartao": "American Express",
+      "numeroCartao": "378282246310005",
+      "mes": "06",
+      "ano": "2031",
+      "nomeNoCartao": "Ana Souza"
+    }
+  },
+  {
+    "cenario": "São Paolo para London com Diner's Club",
+    "origem": "São Paolo",
+    "destino": "London",
+    "indiceVoo": 2,
+    "comprador": {
+      "nome": "Carlos Lima",
+      "endereco": "Rua Augusta, 500",
+      "cidade": "Suzano",
+      "estado": "SP",
+      "cep": "08600001",
+      "tipoCartao": "Diner's Club",
+      "numeroCartao": "30569309025904",
+      "mes": "03",
+      "ano": "2029",
+      "nomeNoCartao": "Carlos Lima"
+    }
+  }
+]
