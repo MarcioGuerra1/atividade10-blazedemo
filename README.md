@@ -7,7 +7,7 @@ Projeto de automação de testes para o site https://www.blazedemo.com usando **
 | Fluxo | Teste | Dados (DDT) |
 |---|---|---|
 | Compra de passagem (busca, reserva, compra e confirmação) | `tests/compra.spec.js` | `data/compra.json` |
-| Login (valida a página `419 Page Expired`, conforme a Atividade 08) | `tests/login.spec.js` | `data/login.json` |
+| Login | `tests/login.spec.js` | `data/login.json` |
 | Cadastro de usuário | `tests/cadastro.spec.js` | `data/cadastro.json` |
 | Esqueci a senha | `tests/esqueci-senha.spec.js` | `data/esqueci-senha.json` |
 | Destino da semana | `tests/destino-semana.spec.js` | `data/destino-semana.json` |
@@ -41,9 +41,8 @@ npm test
 
 ## Limitações observadas no site
 
-No fluxo de login, a Atividade 08 pede que o teste valide a página `419 Page
-Expired`, pois a autenticação não foi implementada no site de treinamento. Os
-formulários de cadastro e recuperação de senha também podem responder com esse
-erro do servidor, impedindo a validação funcional desses fluxos. O site também
-pode retornar `Rate exceeded`; os testes rodam em um único worker para reduzir
-requisições simultâneas.
+Os formulários de cadastro, login e recuperação de senha podem responder com
+`419 Page Expired` ao serem enviados. Esse erro vem do servidor do BlazeDemo e
+é reportado pelos testes, em vez de ser confundido com uma validação bem-sucedida.
+O site também pode retornar `Rate exceeded`; os testes rodam em um único worker
+para reduzir requisições simultâneas.
