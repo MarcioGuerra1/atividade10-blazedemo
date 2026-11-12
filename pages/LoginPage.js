@@ -9,6 +9,7 @@ class LoginPage extends BasePage {
     this.botaoLogin = page.getByRole('button', { name: 'Login' });
     this.linkEsqueciSenha = page.getByRole('link', { name: 'Forgot Your Password?' });
     this.mensagemErro = page.locator('.help-block, .invalid-feedback, .alert-danger');
+    this.mensagemPaginaExpirada = page.locator('body');
   }
 
   async abrir() {

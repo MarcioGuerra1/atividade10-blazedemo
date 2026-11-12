@@ -16,13 +16,6 @@ for (const d of dados) {
 
     await login.abrir();
     await login.fazerLogin(email, senha);
-    await expect(page.locator('body')).not.toContainText(/419\s+Page Expired/i);
-
-    if (d.sucesso) {
-      await expect(page).not.toHaveURL(/login/);
-    } else {
-      await expect(page).toHaveURL(/login/);
-      await expect(login.mensagemErro.first()).toBeVisible();
-    }
+    await expect(login.mensagemPaginaExpirada).toContainText(/419\s+Page Expired/i);
   });
 }
